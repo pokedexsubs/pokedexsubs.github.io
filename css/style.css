@@ -1,0 +1,138 @@
+/* Resources */
+
+@font-face {
+	font-family: "MyriadPro-Light";
+	src: url("../fnt/MyriadPro-Light.otf");
+}
+
+@font-face {
+	font-family: "MyriadPro-Regular";
+	src: url("../fnt/MyriadPro-Regular.otf");
+}
+
+@font-face {
+	font-family: "MyriadPro-Bold";
+	src: url("../fnt/MyriadPro-Bold.otf");
+}
+
+/* Typography */
+
+h1 {
+	font-family: "MyriadPro-Bold", sans-serif;
+	font-weight: normal;
+	margin: 0rem;
+	letter-spacing: -0.02rem;
+}
+
+h2 {
+	font-family: "MyriadPro-Light", sans-serif;
+	font-weight: normal;
+	margin: 0rem;
+	letter-spacing: 0.28rem;
+}
+
+body {
+	font-family: "MyriadPro-Regular", sans-serif;
+	font-weight: normal;
+	color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		color: #FFF;
+	}
+}
+
+/* Layout */
+
+body {
+	max-width: 50rem;
+	margin: auto;
+	
+	display: grid;
+	
+	background-image: url("../img/background1.png");
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 0%;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-image: url("../img/background2.png");
+	}
+}
+
+@media (max-height: 972px) {
+	body {
+		background-position: 50% 15%;
+	}
+}
+
+@media (max-height: 864px) {
+	body {
+		background-position: 50% 25%;
+	}
+}
+
+@media (max-height: 756px) {
+	body {
+		background-position: 50% 35%;
+	}
+}
+
+@media (max-height: 550px) {
+	body {
+		background-position: 50% 0%;
+	}
+}
+
+header {
+	display: grid;
+	grid-column-gap: 1rem;
+	justify-content: start;
+	
+	justify-self: center;
+	
+	margin: 1rem 0rem;
+}
+
+header #pikachu {
+	grid-row: 1 / span 2;
+	grid-column: 2 / 2;
+	
+	height: 5rem;
+	
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+header h1 {
+	grid-row: 1 / 1;
+	grid-column: 1 / 1;
+	
+	margin-top: 1rem;
+	
+	align-self: end;
+}
+
+header h2 {
+	grid-row: 2 / 2;
+	grid-column: 1 / 1;
+	
+	margin-bottom: 1rem;
+	
+	align-self: start;
+}
+
+header, main {
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 0rem 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+}
