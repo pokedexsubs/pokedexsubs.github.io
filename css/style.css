@@ -31,6 +31,11 @@ h2 {
 	letter-spacing: 0.28rem;
 }
 
+h3, h4, h5, h6 {
+	font-family: "MyriadPro-Bold", sans-serif;
+	font-weight: normal;
+}
+
 body {
 	font-family: "MyriadPro-Regular", sans-serif;
 	font-weight: normal;
