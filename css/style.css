@@ -162,7 +162,7 @@ header, main {
 }
 
 @media (prefers-color-scheme: dark) {
-	body {
+	header, main {
 		background-color: rgba(0, 0, 0, 0.5);
 	}
 }
