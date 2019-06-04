@@ -18,6 +18,7 @@
 /* Typography */
 
 h1 {
+	font-size: 2rem;
 	font-family: "MyriadPro-Bold", sans-serif;
 	font-weight: normal;
 	margin: 0rem;
@@ -25,10 +26,21 @@ h1 {
 }
 
 h2 {
+	font-size: 1.5rem;
 	font-family: "MyriadPro-Light", sans-serif;
 	font-weight: normal;
 	margin: 0rem;
 	letter-spacing: 0.28rem;
+}
+
+@media (max-width: 50rem) {
+	h1 {
+		font-size: 1.5rem;
+	}
+	
+	h2 {
+		font-size: 1.125rem;
+	}
 }
 
 h3, h4, h5, h6 {
@@ -71,19 +83,19 @@ body {
 
 @media (max-height: 972px) {
 	body {
-		background-position: 50% 15%;
+		background-position: 50% 10%;
 	}
 }
 
 @media (max-height: 864px) {
 	body {
-		background-position: 50% 25%;
+		background-position: 50% 20%;
 	}
 }
 
 @media (max-height: 756px) {
 	body {
-		background-position: 50% 35%;
+		background-position: 50% 30%;
 	}
 }
 
@@ -103,6 +115,13 @@ header {
 	margin: 1rem 0rem;
 }
 
+@media (max-width: 50rem) {
+	header {
+		justify-self: normal;
+		justify-content: center;
+	}
+}
+
 header #pikachu {
 	grid-row: 1 / span 2;
 	grid-column: 2 / 2;
@@ -111,6 +130,12 @@ header #pikachu {
 	
 	margin-top: 1rem;
 	margin-bottom: 1rem;
+}
+
+@media (max-width: 50rem) {
+	header #pikachu {
+		height: 4rem;
+	}
 }
 
 header h1 {
