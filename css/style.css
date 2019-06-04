@@ -51,12 +51,12 @@ h3, h4, h5, h6 {
 body {
 	font-family: "MyriadPro-Regular", sans-serif;
 	font-weight: normal;
-	color: #000;
+	color: #FFF;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
 	body {
-		color: #FFF;
+		color: #000;
 	}
 }
 
@@ -68,16 +68,16 @@ body {
 	
 	display: grid;
 	
-	background-image: url("../img/background1.jpg");
+	background-image: url("../img/background-dark.jpg");
 	background-color: #000;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: 50% 0%;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
 	body {
-		background-image: url("../img/background2.jpg");
+		background-image: url("../img/background-light.jpg");
 	}
 }
 
@@ -157,12 +157,12 @@ header h2 {
 }
 
 header, main {
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 	padding: 0rem 1rem;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
 	header, main {
-		background-color: rgba(0, 0, 0, 0.5);
+		background-color: rgba(255, 255, 255, 0.5);
 	}
 }
